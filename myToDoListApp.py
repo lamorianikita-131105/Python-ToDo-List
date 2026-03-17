@@ -24,7 +24,7 @@ while True:
         task = input("Enter a task:")
         tasks.append(task)
         print(Fore.GREEN + f"Task `{task}` added successfully!")
-        #input(Fore.CYAN + "Press Enter to continue...")
+        input(Fore.CYAN + "Press Enter to continue...")
         
     elif choice == "2":
         print(Fore.YELLOW + "\nYour Tasks:")
@@ -33,7 +33,7 @@ while True:
                 print(Fore.BLUE + f"{idx}.{t}")
         else:
             print(Fore.RED + "No tasks found!")
-        #input(Fore.CYAN + "Press Enter to continue...")
+        input(Fore.CYAN + "Press Enter to continue...")
     
     elif choice =="3":
         if tasks:
@@ -43,11 +43,11 @@ while True:
                 print(Fore.GREEN + f"Task `{removed}` removed successfully!")
             else:
                 print(Fore.RED + "Invalid task number")
-        #input(Fore.CYAN + "Press Enter to continue...")
+        input(Fore.CYAN + "Press Enter to continue...")
         
     elif choice == "4":
         print(Fore.RED + "Existing To-Do List. Goodbye!")
         break
     else:
         print(Fore.RED + "Invalid choice! Please enter 1-4")
-        #input(Fore.CYAN + "Press Enter to continue...")
+        input(Fore.CYAN + "Press Enter to continue...")
